@@ -5,7 +5,7 @@ using System.Net;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
-namespace dadatacsharp {
+namespace DaData.Client {
 
     /// <summary>
     /// Interacts with DaData clean API (https://dadata.ru/api/clean/)
@@ -33,7 +33,6 @@ namespace dadatacsharp {
         };
 
         static CleanClient() {
-            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls;
         }
 
         /// <summary>
@@ -73,14 +72,14 @@ namespace dadatacsharp {
             var httpRequest = CreateHttpRequest();
 
             // prepare serialized json request
-            using (var w = new StreamWriter(httpRequest.GetRequestStream())) {
+            using (var w = new StreamWriter(httpRequest.GetRequestStreamAsync().Result)) {
                 using (JsonWriter writer = new JsonTextWriter(w)) {
                     this.serializer.Serialize(writer, request);
                 }
             }
 
             // get response and de-serialize it to typed records
-            var httpResponse = (HttpWebResponse) httpRequest.GetResponse();
+            var httpResponse = (HttpWebResponse) httpRequest.GetResponseAsync().Result;
             using (var r = new StreamReader(httpResponse.GetResponseStream())) {
                 string responseText = r.ReadToEnd();
                 return JsonConvert.DeserializeObject<CleanResponse>(responseText, this.converter);
@@ -120,9 +119,9 @@ namespace dadatacsharp {
             var request = (HttpWebRequest) WebRequest.Create(this.url);
             request.Method = "POST";
             request.ContentType = "application/json";
-            request.Headers.Add("Authorization", "Token " + this.token);
+            request.Headers["Authorization"] = "Token " + this.token;
             if (this.secret != null) {
-                request.Headers.Add("X-Secret", this.secret);
+                request.Headers["X-Secret"] = this.secret;
             }
             return request;
         }

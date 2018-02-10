@@ -4,7 +4,7 @@ API DaData.ru для C# / .NET
 Описание
 ---------------
 
-Библиотека `dadata-csharp` — это обертка над [API стандартизации](https://dadata.ru/api/clean/) DaData.ru для C# и других .NET-языков.
+Библиотека `DaData.Client` — это обертка над [API стандартизации](https://dadata.ru/api/clean/) DaData.ru для C# и других .NET-языков.
 
 ![Стандартизация](doc/api-clean.png)
 

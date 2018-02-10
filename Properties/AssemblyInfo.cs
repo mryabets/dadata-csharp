@@ -1,27 +1,17 @@
 ﻿using System.Reflection;
 using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 
-// Information about this assembly is defined by the following attributes.
-// Change them to the values specific to your project.
+// Setting ComVisible to false makes the types in this assembly not visible
+// to COM components.  If you need to access a type in this assembly from
+// COM, set the ComVisible attribute to true on that type.
+[assembly: ComVisible(false)]
 
-[assembly: AssemblyTitle ("dadata-csharp")]
-[assembly: AssemblyDescription ("DaData.ru API client for C# / .NET")]
-[assembly: AssemblyConfiguration ("")]
-[assembly: AssemblyCompany ("HFLabs")]
-[assembly: AssemblyProduct ("DaData.ru")]
-[assembly: AssemblyCopyright ("HFLabs")]
-[assembly: AssemblyTrademark ("")]
-[assembly: AssemblyCulture ("")]
-
-// The assembly version has the format "{Major}.{Minor}.{Build}.{Revision}".
-// The form "{Major}.{Minor}.*" will automatically update the build and revision,
-// and "{Major}.{Minor}.{Build}.*" will update just the revision.
-
-[assembly: AssemblyVersion ("1.0.*")]
+// The following GUID is for the ID of the typelib if this project is exposed to COM
+[assembly: Guid("fd1dd296-6a79-48af-bfd0-c75b8f58ddfd")]
 
 // The following attributes are used to specify the signing key for the assembly,
 // if desired. See the Mono documentation for more information about signing.
 
 //[assembly: AssemblyDelaySign(false)]
 //[assembly: AssemblyKeyFile("")]
-

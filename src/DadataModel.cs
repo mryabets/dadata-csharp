@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace dadatacsharp {
+namespace DaData.Client {
 
     /// <summary>
     /// DaData data entity (address, phone etc).

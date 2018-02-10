@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net45;netstandard1.3</TargetFrameworks>
+    <RootNamespace>DaData.Client</RootNamespace>
+    <AssemblyName>DaData.Client</AssemblyName>
+    <ReleaseVersion>1.0</ReleaseVersion>
+    <Company>HFLabs</Company>
+    <Product>DaData.ru</Product>
+    <Description>DaData.ru API client for C# / .NET</Description>
+    <Authors>HFLabs</Authors>
+    <Copyright>HFLabs</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="NUnit" Version="3.9.0" />
+    <PackageReference Include="System.Net.Requests" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net45' ">
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+</Project>
