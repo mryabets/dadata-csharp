@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>net45;netstandard1.3</TargetFrameworks>
     <RootNamespace>DaData.Client</RootNamespace>
-    <AssemblyName>DaData.Client</AssemblyName>
+    <AssemblyName>DaData.Client.Clean</AssemblyName>
     <ReleaseVersion>1.0</ReleaseVersion>
     <Company>HFLabs</Company>
     <Product>DaData.ru</Product>
@@ -11,6 +11,14 @@
     <Authors>HFLabs</Authors>
     <Copyright>HFLabs</Copyright>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>DaData.Client.Clean</PackageId>
+    <RepositoryType>git</RepositoryType>
+    <FileVersion>1.0.1.0</FileVersion>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <Version>1.0.1</Version>
+    <PackageProjectUrl>https://github.com/mryabets/dadata-csharp</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/mryabets/dadata-csharp</RepositoryUrl>
+    <PackageTags>DaData;Clean</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
