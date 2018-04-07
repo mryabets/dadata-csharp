@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaData.Client", "DaData.Client.csproj", "{30BEACDE-1B2A-498A-AA8C-5C56A92EAB51}"
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DaData.Client", "src\DaData.Client\DaData.Client.csproj", "{30BEACDE-1B2A-498A-AA8C-5C56A92EAB51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaData.Client.Tests", "src\DaData.Client.Tests\DaData.Client.Tests.csproj", "{24347AFE-D183-4133-8B48-9280ECADA6A9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,5 +17,15 @@ Global
 		{30BEACDE-1B2A-498A-AA8C-5C56A92EAB51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30BEACDE-1B2A-498A-AA8C-5C56A92EAB51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30BEACDE-1B2A-498A-AA8C-5C56A92EAB51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24347AFE-D183-4133-8B48-9280ECADA6A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24347AFE-D183-4133-8B48-9280ECADA6A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24347AFE-D183-4133-8B48-9280ECADA6A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24347AFE-D183-4133-8B48-9280ECADA6A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7370BA2B-A7A0-4041-8486-1C7923FE91C5}
 	EndGlobalSection
 EndGlobal
